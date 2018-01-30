@@ -1,0 +1,35 @@
+.profile {
+	width: 30vw;
+	height: 100vh;
+	background-color: $primary;
+	.flex {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}
+
+.profile-card {
+	width: 100%;
+	height: 50%;
+	transition: background-color 0.3s;
+	.flex {
+		height: 100%;
+		flex-direction: column;
+		justify-content: center;
+	}
+	img {
+		width: 150px;
+		margin-bottom: 20px;
+		border-radius: 50%;
+		border: 5px solid $white;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+		transition: all 0.3s;
+	}
+	&:hover {
+		background-color: rgba(224, 224, 224, 0.19);
+		img {
+			box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+			transform: translateY(-5px);
+		}
+	}
+}
