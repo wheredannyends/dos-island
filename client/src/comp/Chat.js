@@ -20,6 +20,8 @@ class App extends Component {
 			userName: e.target.value
 		});
 	}
+
+	
 	
 	joinChat = () => {
 		if (this.state.userName != "") {
