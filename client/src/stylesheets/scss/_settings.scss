@@ -59,6 +59,9 @@ body {
 		transform: translateY(5px);
 		box-shadow: none;
 	}
+	&:focus {
+		outline: none;
+	}
 }
 
 .input {
